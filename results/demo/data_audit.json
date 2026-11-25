@@ -1,0 +1,13 @@
+{
+  "source": "procedural surfaces",
+  "split_seeds": {
+    "train": 11,
+    "val": 22,
+    "test": 33
+  },
+  "counts": {
+    "train": 128,
+    "val": 48,
+    "test": 80
+  }
+}

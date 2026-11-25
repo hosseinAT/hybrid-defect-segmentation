@@ -1,0 +1,13 @@
+{
+  "seeds": [
+    7
+  ],
+  "variants": [
+    "cnn",
+    "hybrid"
+  ],
+  "epochs": 1,
+  "train": 8,
+  "val": 4,
+  "test": 4
+}

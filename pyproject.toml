@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-defect-segmentation"
+version = "0.2.0"
+description = "Reproducible industrial vision experiments"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.5,<3", "numpy>=1.24,<3", "Pillow>=10,<13", "scikit-learn>=1.3,<2", "matplotlib>=3.7,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
